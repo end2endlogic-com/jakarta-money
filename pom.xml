@@ -22,7 +22,7 @@
     <groupId>org.javamoney</groupId>
     <artifactId>jakarta</artifactId>
     <packaging>jar</packaging>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1a</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -42,7 +42,7 @@
         <dependency>
             <groupId>org.javamoney.moneta</groupId>
             <artifactId>moneta-core</artifactId>
-            <version>1.4.2</version>
+            <version>1.4.4</version>
         </dependency>
         <dependency>
             <groupId>jakarta.platform</groupId>
@@ -161,5 +161,12 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>io.cloudrepo</id> <!-- Must Match the Unique Identifier in settings.xml -->
+            <name>My First Cloud Repo Repository</name>
+            <url>https://end2endlogic.mycloudrepo.io/repositories/end2endlogic-opensource-release</url>
+        </repository>
+    </distributionManagement>
 
 </project>
